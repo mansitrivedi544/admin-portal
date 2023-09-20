@@ -5,10 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin Login</title>
+    <title>Company Login</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
 
+    </style>
 </head>
 
 <body>
@@ -21,10 +23,10 @@
                             <div class="brand-logo">
                             </div>
                             @include('message')
-                            <a class="font-weight-light" href="{{route('companyLogin')}}">click here to login with company</a>
+                            <a class="font-weight-light" href="{{route('adminLogin')}}">click here to login with admin</a>
 
-                            <h3 class="font-weight-light">Admin LogIn</h3>
-                            <form role="form" method="POST" action="{{ route('adminLoginPost') }}">
+                            <h3 class="font-weight-light">Company LogIn</h3>
+                            <form role="form" method="POST" action="{{ route('companyLoginPost') }}">
                                 @csrf
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control form-control-lg " placeholder="{{ __('E-Mail Address') }}">

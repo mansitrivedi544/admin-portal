@@ -5,10 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin Dashboard</title>
+    <title>Company Dashboard</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
+    <style>
+     
+    </style>
 </head>
 
 <body>
@@ -21,9 +23,8 @@
                             <div class="brand-logo">
                             </div>
                             <h3 class="font-weight-light">Dashboard</h3>
-                            <a class="font-weight-light" href="{{route('adminLogout')}}">logout</a>
-                            <a class="font-weight-light" href="{{route('companyList')}}">Company</a>
-
+                            <a class="font-weight-light" href="{{route('companyLogout')}}">Logout</a>
+                            <a class="font-weight-light" href="{{route('productList')}}">Product</a>
                         </div>
                     </div>
                 </div>
@@ -33,6 +34,3 @@
 </body>
 
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-</script>
